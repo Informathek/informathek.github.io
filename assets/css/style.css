@@ -14,6 +14,27 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+/**
+* #Profil
+*/
+@font-face {
+  font-family: 'FFYaseer-Regular';
+  /* src: url(/assets/fonts/FFYaseer-Regular.ttf) format('truetype'); */
+  src: url(../fonts/FFYaseer-Regular.ttf)format('truetype');
+  /* You may specify additional properties like font-weight and font-style if needed */
+}
+
+/* .arabic {
+  direction: rtl;
+  align-items: right;
+  text-align: right;
+} */
+
+/* .english {
+  direction: ltr;
+  align-items: left;
+  text-align: left;
+} */
 
 :root {
 
@@ -367,7 +388,8 @@ main {
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  /* font-size: var(--fs-3); */
+  font-size: 20px;
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
@@ -476,7 +498,7 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: var(--orange-yellow-crayola);
   font-size: 18px;
 }
 
@@ -485,7 +507,14 @@ main {
   color: var(--light-gray);
 }
 
+.telegram {
+  color: var(--orange-yellow-crayola);
+}
 
+
+.telegram:hover {
+  color: var(--light-gray);
+}
 
 
 
@@ -494,16 +523,21 @@ main {
 \*-----------------------------------*/
 
 .navbar {
-  position: fixed;
+  /* position:absolute */
   bottom: 0;
   left: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 12px 12px;
   box-shadow: var(--shadow-2);
   z-index: 5;
+
+  margin-bottom: 15px;
+  /* max-height: 112px; */
+  /* overflow: hidden; */
+  /* transition: var(--transition-2); */
 }
 
 .navbar-list {
@@ -589,6 +623,8 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  text-align: right;
+  direction: rtl;
 }
 
 .service-icon-box {
@@ -601,6 +637,8 @@ main {
 
 .service-content-box {
   text-align: center;
+  /* text-align: right; */
+  direction: rtl;
 }
 
 .service-item-title {
@@ -612,6 +650,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  direction: rtl;
 }
 
 
@@ -1545,7 +1584,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .navbar {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
   }
 
   .navbar-list {
@@ -1557,26 +1596,23 @@ textarea.form-input::-webkit-resizer {
   }
 
 
-
-  /**
-   * #Profil
-   */
-
   .profil .article-title {
     margin-bottom: 20px;
   }
 
-  .profil-text {
+  .profil-text p {
     margin-bottom: 40px;
   }
 
-  .arabic {
+  /* .arabic {
     direction: rtl;
-    font-family: 'Lalezar', cursive;
+    align-items: right;
+    text-align: right;
   }
 
-  /* .arabic-color {
-    color: var(--orange-yellow-crayola);
+  .english {
+    direction: ltr;
+    text-align: left;
   } */
 
   /* service */
@@ -1595,7 +1631,9 @@ textarea.form-input::-webkit-resizer {
   }
 
   .service-content-box {
-    text-align: left;
+    /* text-align: left; */
+    text-align: right;
+
   }
 
   /* testimonials */
@@ -1691,17 +1729,20 @@ textarea.form-input::-webkit-resizer {
    */
 
   .timeline-list {
-    margin-left: 65px;
+    /* margin-left: 65px; */
+    margin-right: 65px;
   }
 
   .timeline-item:not(:last-child)::before {
-    left: -40px;
+    /* left: -40px; */
+    right: -40px;
   }
 
   .timeline-item::after {
     height: 8px;
     width: 8px;
-    left: -43px;
+    /* left: -43px; */
+    right: -43px;
   }
 
   .skills-item:not(:last-child) {
