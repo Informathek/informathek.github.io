@@ -367,7 +367,8 @@ main {
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  /* font-size: var(--fs-3); */
+  font-size: 23px;
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
@@ -476,7 +477,7 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: var(--orange-yellow-crayola);
   font-size: 18px;
 }
 
@@ -485,7 +486,14 @@ main {
   color: var(--light-gray);
 }
 
+.telegram {
+  color: var(--orange-yellow-crayola);
+}
 
+
+.telegram:hover {
+  color: var(--light-gray);
+}
 
 
 
@@ -589,6 +597,8 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  text-align: right;
+  direction: rtl;
 }
 
 .service-icon-box {
@@ -600,7 +610,9 @@ main {
 }
 
 .service-content-box {
-  text-align: center;
+  /* text-align: center; */
+  text-align: right;
+  direction: rtl;
 }
 
 .service-item-title {
@@ -612,6 +624,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  direction: rtl;
 }
 
 
@@ -1578,12 +1591,17 @@ textarea.form-input::-webkit-resizer {
 
   .arabic {
     direction: rtl;
-    font-family: 'FFYaseer-Regular', sans-serif;
+    /* font-family: 'FFYaseer-Regular', sans-serif; */
   }
 
   /* .arabic-color {
     color: var(--orange-yellow-crayola);
   } */
+
+  .english {
+    direction: ltr;
+    /* font-family: 'FFYaseer-Regular', sans-serif; */
+  }
 
   /* service */
 
@@ -1601,7 +1619,9 @@ textarea.form-input::-webkit-resizer {
   }
 
   .service-content-box {
-    text-align: left;
+    /* text-align: left; */
+    text-align: right;
+
   }
 
   /* testimonials */
@@ -1697,17 +1717,20 @@ textarea.form-input::-webkit-resizer {
    */
 
   .timeline-list {
-    margin-left: 65px;
+    /* margin-left: 65px; */
+    margin-right: 65px;
   }
 
   .timeline-item:not(:last-child)::before {
-    left: -40px;
+    /* left: -40px; */
+    right: -40px;
   }
 
   .timeline-item::after {
     height: 8px;
     width: 8px;
-    left: -43px;
+    /* left: -43px; */
+    right: -43px;
   }
 
   .skills-item:not(:last-child) {
