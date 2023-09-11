@@ -24,19 +24,17 @@
   /* You may specify additional properties like font-weight and font-style if needed */
 }
 
-.arabic {
+/* .arabic {
   direction: rtl;
-  /* font-family: 'FFYaseer-Regular', sans-serif; */
-}
+  align-items: right;
+  text-align: right;
+} */
 
-/* .arabic-color {
-      color: var(--orange-yellow-crayola);
-    } */
-
-.english {
+/* .english {
   direction: ltr;
-  /* font-family: 'FFYaseer-Regular', sans-serif; */
-}
+  align-items: left;
+  text-align: left;
+} */
 
 :root {
 
@@ -638,8 +636,8 @@ main {
 }
 
 .service-content-box {
-  /* text-align: center; */
-  text-align: right;
+  text-align: center;
+  /* text-align: right; */
   direction: rtl;
 }
 
@@ -1606,15 +1604,16 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 40px;
   }
 
-  .arabic {
+  /* .arabic {
     direction: rtl;
-    /* font-family: 'FFYaseer-Regular', sans-serif; */
+    align-items: right;
+    text-align: right;
   }
-  
+
   .english {
     direction: ltr;
-    /* font-family: 'FFYaseer-Regular', sans-serif; */
-  }
+    text-align: left;
+  } */
 
   /* service */
 
