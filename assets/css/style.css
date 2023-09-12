@@ -974,6 +974,7 @@ main {
 }
 
 .filter-select-box {
+  display: none;
   position: relative;
   margin-bottom: 25px;
 }
