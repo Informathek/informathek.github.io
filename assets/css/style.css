@@ -307,6 +307,7 @@ article.active {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   cursor: pointer;
+  cursor: default;
   z-index: 1;
 }
 
@@ -558,6 +559,17 @@ main {
 /**
  * #service 
  */
+.svg-icon {
+  fill: var(--orange-yellow-crayola);
+  /* Default color */
+  transition: fill 0.3s;
+  /* Smooth transition for color change */
+}
+
+.svg-icon:hover {
+  fill: var(--light-gray);
+  /* Color on hover */
+}
 
 .service {
   margin-bottom: 35px;
