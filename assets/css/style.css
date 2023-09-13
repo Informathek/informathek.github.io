@@ -476,7 +476,7 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: var(--orange-yellow-crayola);
   font-size: 18px;
 }
 
@@ -974,6 +974,7 @@ main {
 }
 
 .filter-select-box {
+  display: none;
   position: relative;
   margin-bottom: 25px;
 }
@@ -1240,7 +1241,36 @@ main {
 }
 
 
+.article-title {
+  padding-bottom: 20px;
+}
 
+.filter-select-box {
+  display: none;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-left: 5px;
+  margin-bottom: 30px;
+}
+
+.filter-item button {
+  color: var(--light-gray);
+  font-size: var(--fs-5);
+  transition: var(--transition-1);
+}
+
+.filter-item button:hover {
+  color: var(--light-gray-70);
+}
+
+.filter-item button.active {
+  color: var(--orange-yellow-crayola);
+}
 
 
 /*-----------------------------------*\
