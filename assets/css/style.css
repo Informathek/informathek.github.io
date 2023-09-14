@@ -387,7 +387,7 @@ main {
 .info-content .externial_link {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
   font-weight: var(--fw-300);
   width: max-content;
   padding: 3px 12px;
@@ -1568,7 +1568,7 @@ textarea.form-input::-webkit-resizer {
   .info-content .externial_link {
     color: var(--white-1);
     background: var(--onyx);
-    font-size: var(--fs-8);
+    font-size: var(--fs-7);
     font-weight: var(--fw-300);
     width: max-content;
     padding: 3px 12px;
@@ -2184,7 +2184,7 @@ textarea.form-input::-webkit-resizer {
   .info-content .externial_link {
     color: var(--white-1);
     background: var(--onyx);
-    font-size: var(--fs-8);
+    font-size: var(--fs-7);
     font-weight: var(--fw-300);
     width: max-content;
     padding: 3px 12px;
