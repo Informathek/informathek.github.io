@@ -384,6 +384,16 @@ main {
   border-radius: 8px;
 }
 
+.info-content .externial_link {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -1555,6 +1565,16 @@ textarea.form-input::-webkit-resizer {
     padding: 5px 18px;
   }
 
+  .info-content .externial_link {
+    color: var(--white-1);
+    background: var(--onyx);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-300);
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
+  }
+
   .info_more-btn {
     top: -30px;
     right: -30px;
@@ -2159,6 +2179,16 @@ textarea.form-input::-webkit-resizer {
 
   .info-content .title {
     margin: auto;
+  }
+
+  .info-content .externial_link {
+    color: var(--white-1);
+    background: var(--onyx);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-300);
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
   }
 
   .info_more-btn {
