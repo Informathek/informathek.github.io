@@ -58,8 +58,8 @@
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
-   * typography
-   */
+     * typography
+     */
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
@@ -81,8 +81,8 @@
   --fw-600: 600;
 
   /**
-   * shadow
-   */
+     * shadow
+     */
 
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
@@ -91,8 +91,8 @@
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
   /**
-   * transition
-   */
+     * transition
+     */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
@@ -104,8 +104,8 @@
 
 
 /*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+    #RESET
+  \*-----------------------------------*/
 
 *,
 *::before,
@@ -170,8 +170,8 @@ body {
 
 
 /*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+    #REUSED STYLE
+  \*-----------------------------------*/
 
 .sidebar,
 article {
@@ -325,8 +325,8 @@ article.active {
 
 
 /*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
+    #MAIN
+  \*-----------------------------------*/
 
 main {
   margin: 15px 12px;
@@ -339,12 +339,12 @@ main {
 
 
 /*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
+    #SIDEBAR
+  \*-----------------------------------*/
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 130px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -501,8 +501,8 @@ main {
 
 
 /*-----------------------------------*\
-  #NAVBAR
-\*-----------------------------------*/
+    #NAVBAR
+  \*-----------------------------------*/
 
 .navbar {
   /* position: fixed; */
@@ -510,7 +510,7 @@ main {
   left: 0;
   width: 100%;
   margin-bottom: 15px;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--bg-gradient-jet);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 12px 12px;
@@ -548,8 +548,8 @@ main {
 
 
 /*-----------------------------------*\
-  #Profil
-\*-----------------------------------*/
+    #Profil
+  \*-----------------------------------*/
 
 .profil .article-title {
   margin-bottom: 15px;
@@ -569,8 +569,8 @@ main {
 
 
 /**
- * #service 
- */
+   * #service 
+   */
 .svg-icon {
   fill: var(--orange-yellow-crayola);
   /* Default color */
@@ -623,8 +623,34 @@ main {
   margin: auto;
 }
 
+.service-img-box {
+  margin-bottom: 10px;
+}
+
+.service-img-box img {
+  margin: auto;
+  border-radius: 14px;
+}
+
+.profile {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background: var(--bg-gradient-onyx)
+}
+
+.profile img {
+  border-radius: 20px;
+  margin: auto;
+  background: var(--bg-gradient-onyx)
+}
+
 .service-content-box {
   text-align: center;
+}
+
+.service-content-box-img {
+  text-align: center;
+  margin-top: 13px;
 }
 
 .service-item-title {
@@ -640,8 +666,8 @@ main {
 
 
 /**
- * #testimonials 
- */
+   * #testimonials 
+   */
 
 .testimonials {
   margin-bottom: 30px;
@@ -698,8 +724,8 @@ main {
 
 
 /**
- * #testimonials-modal
- */
+   * #testimonials-modal
+   */
 
 .modal-container {
   position: fixed;
@@ -822,8 +848,8 @@ main {
 
 
 /**
- * #clients 
- */
+   * #clients 
+   */
 
 .clients {
   margin-bottom: 15px;
@@ -864,8 +890,8 @@ main {
 
 
 /*-----------------------------------*\
-  #RESUME
-\*-----------------------------------*/
+    #RESUME
+  \*-----------------------------------*/
 
 .article-title {
   margin-bottom: 30px;
@@ -873,8 +899,8 @@ main {
 
 
 /**
- * education and experience 
- */
+   * education and experience 
+   */
 
 .timeline {
   margin-bottom: 30px;
@@ -943,8 +969,8 @@ main {
 
 
 /**
- * skills 
- */
+   * skills 
+   */
 
 .skills-title {
   margin-bottom: 20px;
@@ -990,8 +1016,8 @@ main {
 
 
 /*-----------------------------------*\
-  #KURS
-\*-----------------------------------*/
+    #KURS
+  \*-----------------------------------*/
 
 .filter-list {
   /* display: none; */
@@ -1179,8 +1205,8 @@ main {
 
 
 /*-----------------------------------*\
-  #KURSE
-\*-----------------------------------*/
+    #KURSE
+  \*-----------------------------------*/
 
 .kurse-posts {
   margin-bottom: 10px;
@@ -1304,8 +1330,8 @@ main {
 
 
 /*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
+    #CONTACT
+  \*-----------------------------------*/
 
 .mapbox {
   position: relative;
@@ -1326,6 +1352,29 @@ main {
   height: 100%;
   border: none;
   filter: grayscale(1) invert(1);
+}
+
+
+
+.banner {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--jet);
+  overflow: hidden;
+}
+
+.banner figure {
+  height: 100%;
+}
+
+.banner iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* filter: grayscale(1) invert(1); */
 }
 
 .contact-form {
@@ -1435,18 +1484,18 @@ textarea.form-input::-webkit-resizer {
 
 
 /*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
+    #RESPONSIVE
+  \*-----------------------------------*/
 
 /**
- * responsive larger than 450px screen
- */
+   * responsive larger than 450px screen
+   */
 
 @media (min-width: 450px) {
 
   /**
-   * client
-   */
+     * client
+     */
 
   .clients-item {
     min-width: calc(33.33% - 10px);
@@ -1455,8 +1504,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #KURS, KURSE 
-   */
+     * #KURS, KURSE 
+     */
 
   .project-img,
   .kurse-banner-box {
@@ -1470,20 +1519,20 @@ textarea.form-input::-webkit-resizer {
 
 
 /**
- * responsive larger than 580px screen
- */
+   * responsive larger than 580px screen
+   */
 
 @media (min-width: 580px) {
 
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
 
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-1: 32px;
     --fs-2: 24px;
@@ -1498,8 +1547,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #REUSED STYLE
-   */
+     * #REUSED STYLE
+     */
 
   .sidebar,
   article {
@@ -1528,8 +1577,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #MAIN
-   */
+     * #MAIN
+     */
 
   main {
     margin-top: 60px;
@@ -1539,8 +1588,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #SIDEBAR
-   */
+     * #SIDEBAR
+     */
 
   .sidebar {
     max-height: 180px;
@@ -1612,11 +1661,16 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #NAVBAR
-   */
+     * #NAVBAR
+     */
 
   .navbar {
-    border-radius: 20px 20px 0 0;
+    border-radius: 12px 12px 12px 12px;
+    width: 86%;
+    margin-left: 7%;
+    margin-bottom: 4%;
+    /* justify-content: center;
+      align-items: center; */
   }
 
   .navbar-list {
@@ -1630,8 +1684,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #Profil
-   */
+     * #Profil
+     */
 
   .profil .article-title {
     margin-bottom: 20px;
@@ -1649,6 +1703,14 @@ textarea.form-input::-webkit-resizer {
 
   /* service */
 
+  .service-item-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px;
+  }
+
   .service-item {
     display: flex;
     justify-content: flex-start;
@@ -1662,8 +1724,25 @@ textarea.form-input::-webkit-resizer {
     margin-top: 5px;
   }
 
+  .service-img-box {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .profile {
+    margin-bottom: 0;
+    margin-top: 5px;
+    border-radius: 20px;
+    background: var(--bg-gradient-onyx)
+  }
+
   .service-content-box {
     text-align: left;
+  }
+
+  .service-content-box-img {
+    text-align: left;
+    margin-top: 13px;
   }
 
   /* testimonials */
@@ -1755,8 +1834,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #RESUME
-   */
+     * #RESUME
+     */
 
   .timeline-list {
     margin-left: 65px;
@@ -1779,8 +1858,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #KURS, KURSE
-   */
+     * #KURS, KURSE
+     */
 
   .project-img,
   .kurse-banner-box {
@@ -1798,10 +1877,15 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #CONTACT
-   */
+     * #CONTACT
+     */
 
   .mapbox {
+    height: 380px;
+    border-radius: 18px;
+  }
+
+  .banner {
     height: 380px;
     border-radius: 18px;
   }
@@ -1835,14 +1919,14 @@ textarea.form-input::-webkit-resizer {
 
 
 /**
- * responsive larger than 768px screen
- */
+   * responsive larger than 768px screen
+   */
 
 @media (min-width: 768px) {
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .sidebar,
   article {
@@ -1856,8 +1940,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * SIDEBAR
-   */
+     * SIDEBAR
+     */
 
   .contacts-list {
     grid-template-columns: 1fr 1fr;
@@ -1867,8 +1951,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * NAVBAR
-   */
+     * NAVBAR
+     */
 
   .navbar-link {
     --fs-8: 15px;
@@ -1877,8 +1961,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * Profil
-   */
+     * Profil
+     */
 
   /* testimonials modal */
 
@@ -1894,8 +1978,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * KURS
-   */
+     * KURS
+     */
 
   .article-title {
     padding-bottom: 20px;
@@ -1938,8 +2022,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * CONTACT
-   */
+     * CONTACT
+     */
 
   .input-wrapper {
     grid-template-columns: 1fr 1fr;
@@ -1957,20 +2041,20 @@ textarea.form-input::-webkit-resizer {
 
 
 /**
- * responsive larger than 1024px screen
- */
+   * responsive larger than 1024px screen
+   */
 
 @media (min-width: 1024px) {
 
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
 
     /**
-    * shadow
-    */
+      * shadow
+      */
 
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
@@ -1981,8 +2065,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .sidebar,
   article {
@@ -1993,8 +2077,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * MAIN 
-   */
+     * MAIN 
+     */
 
   main {
     margin-bottom: 60px;
@@ -2009,19 +2093,19 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * NAVBAR
-   */
+     * NAVBAR
+     */
 
   .navbar {
     position: absolute;
     bottom: auto;
-    top: 0;
+    top: 20px;
     left: auto;
-    right: 0;
+    right: 30px;
     width: max-content;
-    border-radius: 0 20px;
+    border-radius: 12px 12px 12px 12px;
     padding: 0 20px;
-    box-shadow: none;
+    box-shadow: var(--shadow-2)
   }
 
   .navbar-list {
@@ -2036,8 +2120,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * Profil
-   */
+     * Profil
+     */
 
   /* service */
 
@@ -2061,8 +2145,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * KURS
-   */
+     * KURS
+     */
 
   .project-list {
     grid-template-columns: repeat(3, 1fr);
@@ -2071,8 +2155,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * KURSE
-   */
+     * KURSE
+     */
 
   .kurse-banner-box {
     height: 230px;
@@ -2085,14 +2169,14 @@ textarea.form-input::-webkit-resizer {
 
 
 /**
- * responsive larger than 1250px screen
- */
+   * responsive larger than 1250px screen
+   */
 
 @media (min-width: 1250px) {
 
   /**
-   * RESET
-   */
+     * RESET
+     */
 
   body::-webkit-scrollbar {
     width: 20px;
@@ -2121,8 +2205,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .sidebar,
   article {
@@ -2136,8 +2220,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * MAIN
-   */
+     * MAIN
+     */
 
   main {
     max-width: 1200px;
@@ -2157,8 +2241,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * SIDEBAR
-   */
+     * SIDEBAR
+     */
 
   .sidebar {
     position: sticky;
@@ -2233,8 +2317,8 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-	 * RESUME
-	 */
+  	 * RESUME
+  	 */
 
   .timeline-text {
     max-width: 700px;
